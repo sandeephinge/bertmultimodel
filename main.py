@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from transformers import DistilBertTokenizerFast, DistilBertPreTrainedModel, DistilBertModel
 from torch import nn
 
-# ✅ Define Multi-Task DistilBERT Model (Same as Training)
+# ✅ Define Multi-Task DistilBERT Model
 class DistilBERTMultiTask(DistilBertPreTrainedModel):
     def __init__(self, config, num_intents, num_entities):
         super().__init__(config)
